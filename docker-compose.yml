@@ -22,7 +22,7 @@ services:
       retries: 30
 
   app:
-    image: arjundhatbale/docker-app:latest
+    image: arjundhatbale/docker-app:1.7
     container_name: spring-app
     depends_on:
       mysql:
@@ -42,4 +42,5 @@ networks:
     driver: bridge
 
 volumes:
+
   mysql-data:
